@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+require 'fileutils'
+@file = ARGV[0] 
+exit if @file.nil?
+
+@extension = File.extname(@file).sub(/^\./, '')
+
+runner = File.join('shared', 'runners', @extension + '.rb')
+if File.exists?(runner)
+  FileUtils.mkdir_p(File.join('build', @extension))
+  require runner
+else
+  puts "Runner for #{@extension} not found."
+end
+  
