@@ -4,7 +4,7 @@ object Insertion {
     var key = 0;
     var sort_index = 0;
     for (index <- 1 until array.length) {
-      key = array(index)
+      key        = array(index)
       sort_index = index - 1
       while (sort_index >= 0 && array(sort_index) > key) {
         array(sort_index + 1) = array(sort_index)

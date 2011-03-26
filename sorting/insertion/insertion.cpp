@@ -1,15 +1,15 @@
 #include "../../shared/includes/helpers.cpp"
 
 void insertion_sort(int *array, int size) {
-  int key, search_index;
+  int key, sort_index;
   for (int index = 1; index < size; index++) {
-    key = array[index];
-    search_index = index - 1;
-    while (search_index >= 0 && array[search_index] > key) {  
-      array[search_index+1] = array[search_index];
-      search_index--;
+    key        = array[index];
+    sort_index = index - 1;
+    while (sort_index >= 0 && array[sort_index] > key) {  
+      array[sort_index + 1] = array[sort_index];
+      sort_index--;
     }
-    array[search_index+1] = key;
+    array[sort_index+1] = key;
   }                
 }
 
