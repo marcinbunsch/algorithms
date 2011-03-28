@@ -24,6 +24,8 @@ var array = [4,3,1,5,2]
 
 console.log("Before sort:")
 console.log(array)
+
 insertion_sort(array)
+
 console.log("After sort:")
 console.log(array)

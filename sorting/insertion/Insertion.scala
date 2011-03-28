@@ -16,11 +16,16 @@ object Insertion {
   }
   
   def main(args: Array[String]) {
+
     val ar = Array(4, 2, 3, 5, 1)
+    
     println("Before sort:")
     Helpers.printArray(ar)
+
     insertion_sort(ar)
+
     println("After sort:")
     Helpers.printArray(ar)
+
   }
 }

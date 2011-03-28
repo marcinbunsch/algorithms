@@ -14,8 +14,11 @@ insertion_sort := method(alist,
 )
 
 alist := list(5,1,4,3,2)
+
 "Before sort:" println
 alist println
+
 insertion_sort(alist)
+
 "After sort:" println
 alist println

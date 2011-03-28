@@ -9,8 +9,11 @@ def insertion_sort(array):
   return array
   
 alist = [5,2,3,1,4]
+
 print "Before sort:"
 print alist
+
 insertion_sort(alist)
+
 print "After sort:"
 print alist

@@ -12,8 +12,11 @@ def insertion_sort(array)
 end
 
 arr = [5,2,1,3,4]
+
 puts "Before sort:"
 puts arr.inspect
+
 insertion_sort(arr)
+
 puts "After sort:"
 puts arr.inspect

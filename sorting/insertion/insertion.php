@@ -14,9 +14,12 @@ function insertion_sort($arr) {
 }
 
 $array = array(5,2,1,3,4);
+
 echo "Before sort:\n";
 echo '[' . join($array, ',') . "]\n";
+
 $array = insertion_sort($array);
+
 echo "After sort:\n";
 echo '[' . join($array, ',') . "]\n";
 

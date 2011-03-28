@@ -18,12 +18,17 @@ public class Insertion {
   }
   
   public static void main(String args[]) {
+
     int[] array = { 4,2,5,1,3 };
+
     System.out.println("Before sort:");
     Helpers.printArray(array);
+
     array = insertion_sort(array);
+
     System.out.println("After sort:");
     Helpers.printArray(array);
+
   }
 
 }
